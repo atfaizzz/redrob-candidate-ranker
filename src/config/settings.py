@@ -8,6 +8,9 @@ from __future__ import annotations
 
 import json
 import os
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -178,12 +181,18 @@ def parse_runtime_settings(raw_config: Dict[str, Any]) -> RuntimeSettings:
             "runtime.max_candidates_to_process must be a positive integer or null"
         )
 
+    repository_root = (REPO_ROOT / paths["repository_root"]).resolve()
+    dataset_dir = (REPO_ROOT / paths["dataset_dir"]).resolve()
+    candidates_path = (REPO_ROOT / paths["candidates_path"]).resolve()
+    submission_output_path = (REPO_ROOT / paths["submission_output_path"]).resolve()
+    job_description_path = (REPO_ROOT / paths["job_description_path"]).resolve()
+
     return RuntimeSettings(
-        repository_root=str(paths["repository_root"]),
-        dataset_dir=str(paths["dataset_dir"]),
-        candidates_path=str(paths["candidates_path"]),
-        submission_output_path=str(paths["submission_output_path"]),
-        job_description_path=str(paths["job_description_path"]),
+        repository_root=str(repository_root),
+        dataset_dir=str(dataset_dir),
+        candidates_path=str(candidates_path),
+        submission_output_path=str(submission_output_path),
+        job_description_path=str(job_description_path),
         top_n=top_n,
         random_seed=random_seed,
         strict_validation=strict_validation,
@@ -218,7 +227,7 @@ def parse_app_settings(raw_config: Dict[str, Any]) -> AppSettings:
         shortlist_output_path=str(
             dashboard_cfg.get(
                 "shortlist_output_path",
-                "c:/Users/Faiz Abid/Desktop/India_Runs/outputs/shortlist.csv",
+                str(REPO_ROOT / "outputs" / "shortlist.csv"),
             )
         ),
     )
