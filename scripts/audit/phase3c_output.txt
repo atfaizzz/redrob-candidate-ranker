@@ -1,0 +1,154 @@
+Loading dataset...
+Loaded 100000 candidates.
+Submission has 100 candidates.
+
+Scanning for impossible profiles...
+  Progress: 0/100000...
+  Progress: 20000/100000...
+  Progress: 40000/100000...
+  Progress: 60000/100000...
+  Progress: 80000/100000...
+
+Scan complete.
+
+REFINED HONEYPOT DETECTION RESULTS
+============================================================
+Total impossible-profile candidates : 22670
+  skill_duration_impossible : 1016
+  yoe_vs_graduation         : 21748
+  notice_period_over_180    : 0
+
+Honeypot candidates in our top-100  : 27
+
+  *** CRITICAL: Impossible-profile candidates in top-100! ***
+
+  CAND_0004337  rank=89  score=0.547276
+    FLAG: YOE 7.1y but grad 2022 => max 3y possible
+
+  CAND_0006567  rank=6  score=0.620609
+    FLAG: YOE 7.9y but grad 2020 => max 5y possible
+
+  CAND_0007009  rank=54  score=0.560370
+    FLAG: YOE 7.9y but grad 2021 => max 4y possible
+
+  CAND_0008425  rank=13  score=0.611557
+    FLAG: Skill 'sentence transformers': 8.0y claimed, tech exists since 2018 (max 7y)
+
+  CAND_0013440  rank=19  score=0.593412
+    FLAG: YOE 7.2y but grad 2020 => max 5y possible
+
+  CAND_0016964  rank=32  score=0.576925
+    FLAG: YOE 7.5y but grad 2020 => max 5y possible
+
+  CAND_0018499  rank=3  score=0.625042
+    FLAG: Skill 'weaviate': 7.3y claimed, tech exists since 2019 (max 6y)
+    FLAG: Skill 'langchain': 4.4y claimed, tech exists since 2022 (max 3y)
+    FLAG: YOE 7.2y but grad 2021 => max 4y possible
+
+  CAND_0018722  rank=22  score=0.584695
+    FLAG: Skill 'weaviate': 7.2y claimed, tech exists since 2019 (max 6y)
+
+  CAND_0028793  rank=20  score=0.589074
+    FLAG: YOE 7.2y but grad 2020 => max 5y possible
+
+  CAND_0033978  rank=92  score=0.546660
+    FLAG: YOE 6.3y but grad 2022 => max 3y possible
+    FLAG: YOE 6.3y but grad 2022 => max 3y possible
+
+  CAND_0035256  rank=80  score=0.550253
+    FLAG: YOE 8.0y but grad 2020 => max 5y possible
+
+  CAND_0042590  rank=95  score=0.546567
+    FLAG: YOE 9.3y but grad 2018 => max 7y possible
+
+  CAND_0049120  rank=40  score=0.570398
+    FLAG: YOE 7.4y but grad 2022 => max 3y possible
+
+  CAND_0050876  rank=26  score=0.580889
+    FLAG: Skill 'llamaindex': 3.4y claimed, tech exists since 2023 (max 2y)
+
+  CAND_0053472  rank=94  score=0.546568
+    FLAG: Skill 'llamaindex': 3.2y claimed, tech exists since 2023 (max 2y)
+
+  CAND_0061265  rank=62  score=0.558740
+    FLAG: Skill 'langchain': 4.4y claimed, tech exists since 2022 (max 3y)
+
+  CAND_0064326  rank=21  score=0.587079
+    FLAG: YOE 7.6y but grad 2020 => max 5y possible
+
+  CAND_0067820  rank=27  score=0.580868
+    FLAG: YOE 7.9y but grad 2021 => max 4y possible
+
+  CAND_0067866  rank=7  score=0.619310
+    FLAG: YOE 6.4y but grad 2021 => max 4y possible
+
+  CAND_0076974  rank=70  score=0.553879
+    FLAG: YOE 9.3y but grad 2021 => max 4y possible
+
+  CAND_0080766  rank=41  score=0.569764
+    FLAG: YOE 8.8y but grad 2021 => max 4y possible
+
+  CAND_0081469  rank=51  score=0.563757
+    FLAG: YOE 7.7y but grad 2020 => max 5y possible
+
+  CAND_0081846  rank=5  score=0.624700
+    FLAG: Skill 'llamaindex': 3.2y claimed, tech exists since 2023 (max 2y)
+
+  CAND_0086022  rank=18  score=0.594020
+    FLAG: Skill 'pinecone': 5.2y claimed, tech exists since 2021 (max 4y)
+    FLAG: Skill 'langchain': 3.8y claimed, tech exists since 2022 (max 3y)
+
+  CAND_0086151  rank=64  score=0.558471
+    FLAG: Skill 'langchain': 3.6y claimed, tech exists since 2022 (max 3y)
+
+  CAND_0096142  rank=90  score=0.547157
+    FLAG: Skill 'pinecone': 5.2y claimed, tech exists since 2021 (max 4y)
+
+  CAND_0098217  rank=59  score=0.559332
+    FLAG: YOE 6.4y but grad 2021 => max 4y possible
+
+Sample of ALL detected candidates (first 20):
+  CAND_0000017
+    YOE 12.3y but grad 2022 => max 3y possible
+  CAND_0000020
+    YOE 6.3y but grad 2022 => max 3y possible
+  CAND_0000030
+    YOE 10.0y but grad 2020 => max 5y possible
+  CAND_0000031
+    Skill 'pinecone': 7.3y claimed, tech exists since 2021 (max 4y)
+  CAND_0000032
+    YOE 8.1y but grad 2020 => max 5y possible
+  CAND_0000037
+    YOE 14.3y but grad 2016 => max 9y possible
+  CAND_0000041
+    YOE 13.7y but grad 2018 => max 7y possible
+  CAND_0000045
+    YOE 12.2y but grad 2020 => max 5y possible
+  CAND_0000049
+    YOE 11.8y but grad 2019 => max 6y possible
+  CAND_0000050
+    YOE 13.5y but grad 2017 => max 8y possible
+  CAND_0000058
+    YOE 10.1y but grad 2017 => max 8y possible
+  CAND_0000076
+    YOE 12.0y but grad 2018 => max 7y possible
+  CAND_0000079
+    YOE 13.2y but grad 2014 => max 11y possible
+  CAND_0000081
+    YOE 10.1y but grad 2022 => max 3y possible
+  CAND_0000084
+    YOE 10.6y but grad 2021 => max 4y possible
+  CAND_0000085
+    YOE 12.9y but grad 2018 => max 7y possible
+    YOE 12.9y but grad 2022 => max 3y possible
+  CAND_0000093
+    YOE 8.2y but grad 2021 => max 4y possible
+  CAND_0000103
+    YOE 11.7y but grad 2017 => max 8y possible
+  CAND_0000104
+    YOE 8.1y but grad 2019 => max 6y possible
+  CAND_0000112
+    Skill 'llamaindex': 2.7y claimed, tech exists since 2023 (max 2y)
+
+============================================================
+PHASE 3c COMPLETE

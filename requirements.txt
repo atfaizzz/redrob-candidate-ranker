@@ -1,0 +1,6 @@
+# Core runtime dependencies for the India Runs AI recruitment project
+# Install with: python -m pip install -r requirements.txt
+
+PyYAML>=6.0
+python-docx>=1.1.2
+streamlit>=1.36.0
