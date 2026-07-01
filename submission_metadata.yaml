@@ -1,0 +1,63 @@
+# Redrob AI Hackathon — Submission Metadata
+
+team_name: "india-runs-ai"
+
+primary_contact:
+  name: "Faiz Abid"
+  email: "faiz@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Faiz Abid"
+    email: "faiz@example.com"
+    role: "Team Lead / ML Engineer"
+
+github_repo: "https://github.com/YOUR_USERNAME/India_Runs"
+
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./India_runs_data_and_ai_challenge/candidates.jsonl --out ./outputs/submission.csv"
+
+compute:
+  platform: "Windows 11 / Local"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.14.5"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "GitHub Copilot"
+
+ai_usage_summary: |
+  GitHub Copilot (Claude Sonnet 4.6) was used as a programming assistant to
+  scaffold and implement the full pipeline — backend ingestion, retrieval,
+  ranking, evaluation, explainability, and dashboard — under explicit
+  phase-by-phase architecture guidance. No candidate data was fed to any
+  external API during the ranking inference step. All inference is local and
+  CPU-only.
+
+methodology_summary: |
+  Evidence-weighted hybrid ranker with five interpretable scoring components:
+  (1) semantic alignment between candidate profile tokens and job requirements,
+  (2) experience-years alignment against stated seniority range,
+  (3) career progression depth and seniority signals,
+  (4) behavioural availability (open-to-work, response rate, interview
+  completion), and (5) trust/completeness signals (verified contact, LinkedIn,
+  profile completeness score). Components are combined with learned weights
+  (0.30 / 0.20 / 0.15 / 0.20 / 0.15). Candidate shortlisting uses a
+  three-strategy hybrid retrieval (lexical 35 % + semantic 45 % + metadata
+  20 %) over the full candidate corpus before ranking. Confidence is estimated
+  from profile completeness, consistency, and inter-component agreement.
+  Explanations are templated from the strongest evidence signals and attached
+  per candidate. Runtime is under 5 minutes for 100 000 candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

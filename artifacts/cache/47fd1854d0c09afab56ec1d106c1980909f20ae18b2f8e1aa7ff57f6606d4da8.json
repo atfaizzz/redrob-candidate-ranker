@@ -1,0 +1,50 @@
+{
+  "records_scanned": 5000,
+  "top_level_keys": {
+    "candidate_id": 5000,
+    "career_history": 5000,
+    "certifications": 5000,
+    "education": 5000,
+    "languages": 5000,
+    "profile": 5000,
+    "redrob_signals": 5000,
+    "skills": 5000
+  },
+  "profile_keys": {
+    "anonymized_name": 5000,
+    "country": 5000,
+    "current_company": 5000,
+    "current_company_size": 5000,
+    "current_industry": 5000,
+    "current_title": 5000,
+    "headline": 5000,
+    "location": 5000,
+    "summary": 5000,
+    "years_of_experience": 5000
+  },
+  "redrob_signal_keys": {
+    "applications_submitted_30d": 5000,
+    "avg_response_time_hours": 5000,
+    "connection_count": 5000,
+    "endorsements_received": 5000,
+    "expected_salary_range_inr_lpa": 5000,
+    "github_activity_score": 5000,
+    "interview_completion_rate": 5000,
+    "last_active_date": 5000,
+    "linkedin_connected": 5000,
+    "notice_period_days": 5000,
+    "offer_acceptance_rate": 5000,
+    "open_to_work_flag": 5000,
+    "preferred_work_mode": 5000,
+    "profile_completeness_score": 5000,
+    "profile_views_received_30d": 5000,
+    "recruiter_response_rate": 5000,
+    "saved_by_recruiters_30d": 5000,
+    "search_appearance_30d": 5000,
+    "signup_date": 5000,
+    "skill_assessment_scores": 5000,
+    "verified_email": 5000,
+    "verified_phone": 5000,
+    "willing_to_relocate": 5000
+  }
+}
