@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from src.config.settings import load_config, parse_app_settings
 from src.dashboard.service import RecruiterDashboardService
