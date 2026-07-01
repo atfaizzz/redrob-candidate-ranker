@@ -2,11 +2,11 @@
 # Values are explicit and externalized to satisfy config-driven design.
 
 paths:
-  repository_root: c:/Users/Faiz Abid/Desktop/India_Runs
-  dataset_dir: c:/Users/Faiz Abid/Desktop/India_Runs/India_runs_data_and_ai_challenge
-  candidates_path: c:/Users/Faiz Abid/Desktop/India_Runs/India_runs_data_and_ai_challenge/candidates.jsonl
-  job_description_path: c:/Users/Faiz Abid/Desktop/India_Runs/India_runs_data_and_ai_challenge/job_description.docx
-  submission_output_path: c:/Users/Faiz Abid/Desktop/India_Runs/outputs/submission.csv
+  repository_root: .
+  dataset_dir: India_runs_data_and_ai_challenge
+  candidates_path: India_runs_data_and_ai_challenge/candidates.jsonl
+  job_description_path: India_runs_data_and_ai_challenge/job_description.docx
+  submission_output_path: outputs/submission.csv
 
 runtime:
   top_n: 100
@@ -26,7 +26,7 @@ evaluation:
   top_k_values: [10, 20, 50]
   enable_ablation: true
   enable_robustness: true
-  experiment_log_path: c:/Users/Faiz Abid/Desktop/India_Runs/experiments/experiment_log.jsonl
+  experiment_log_path: experiments/experiment_log.jsonl
 
 logging:
   level: INFO
@@ -35,4 +35,4 @@ dashboard:
   default_page_size: 25
   max_comparison_candidates: 4
   enable_engineering_view: true
-  shortlist_output_path: c:/Users/Faiz Abid/Desktop/India_Runs/outputs/shortlist.csv
+  shortlist_output_path: outputs/shortlist.csv
