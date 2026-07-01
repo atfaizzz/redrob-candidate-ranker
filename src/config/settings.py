@@ -9,12 +9,11 @@ from __future__ import annotations
 import json
 import os
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 @dataclass(frozen=True)
 class RuntimeSettings:
