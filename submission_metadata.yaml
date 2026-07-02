@@ -1,18 +1,18 @@
 # Redrob AI Hackathon — Submission Metadata
 
-team_name: "india-runs-ai"
+team_name: "Error500"
 
 primary_contact:
-  name: "Faiz Abid"
-  email: "faiz@example.com"
-  phone: "+91-XXXXXXXXXX"
+  name: "Mohammad Faiz Abid"
+  email: "faizabid32@gmail.com"
+  phone: "+91-9897348794"
 
 team_members:
-  - name: "Faiz Abid"
-    email: "faiz@example.com"
-    role: "Team Lead / ML Engineer"
+  - name: "Niket Girdhar"
+    email: "niketgirdhar2004@gmail.com"
+    role: "Team Lead"
 
-github_repo: "https://github.com/YOUR_USERNAME/India_Runs"
+github_repo: "https://github.com/atfaizzz/redrob-candidate-ranker"
 
 sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
 
@@ -31,14 +31,11 @@ compute:
 
 ai_tools_used:
   - "GitHub Copilot"
+  - "GPT 5.3 Codex"
 
 ai_usage_summary: |
-  GitHub Copilot (Claude Sonnet 4.6) was used as a programming assistant to
-  scaffold and implement the full pipeline — backend ingestion, retrieval,
-  ranking, evaluation, explainability, and dashboard — under explicit
-  phase-by-phase architecture guidance. No candidate data was fed to any
-  external API during the ranking inference step. All inference is local and
-  CPU-only.
+  GitHub Copilot was used primarily as a development assistant for code scaffolding, boilerplate generation, syntax completion, and implementation support. The overall system architecture, pipeline design, engineering decisions, evaluation strategy, explainability framework, and iterative refinement were directed, reviewed, and validated through human development. AI assistance accelerated routine implementation while the project structure, feature integration, debugging, testing, and design decisions remained under active human guidance. No candidate data was sent to external APIs during the ranking inference stage; all inference is performed locally on CPU-only infrastructure.
+
 
 methodology_summary: |
   Evidence-weighted hybrid ranker with five interpretable scoring components:
