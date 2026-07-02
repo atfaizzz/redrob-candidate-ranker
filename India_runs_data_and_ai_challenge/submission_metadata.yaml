@@ -1,0 +1,69 @@
+# Redrob AI Hackathon — Submission Metadata
+
+team_name: "Error500"
+
+primary_contact:
+  name: "Mohammad Faiz Abid"
+  email: "faizabid32@gmail.com"
+  phone: "+91-9897348794"
+
+team_members:
+  - name: "Niket Girdhar"
+    email: "niketgirdhar2004@gmail.com"
+    role: "Team Lead"
+
+github_repo: "https://github.com/atfaizzz/redrob-candidate-ranker"
+
+sandbox_link: "https://redrob-candidate-ai-recruitment-pipeline.streamlit.app"
+
+reproduce_command: "python rank.py --candidates ./India_runs_data_and_ai_challenge/candidates.jsonl --out ./outputs/submission.csv"
+
+compute:
+  platform: "Windows 11 / Local"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.14.5"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "GitHub Copilot"
+
+ai_usage_summary: |
+  GitHub Copilot was used primarily as a development assistant for code scaffolding, 
+  boilerplate generation, syntax completion, and implementation support. The overall 
+  system architecture, pipeline design, engineering decisions, evaluation strategy, 
+  explainability framework, and iterative refinement were directed, reviewed, and 
+  validated through human development. AI assistance accelerated routine implementation 
+  while the project structure, feature integration, debugging, testing, and design 
+  decisions remained under active human guidance. No candidate data was sent to external 
+  APIs during the ranking inference stage; all inference is performed locally on CPU-only 
+  infrastructure.
+
+
+methodology_summary: |
+  Evidence-weighted hybrid ranker with five interpretable scoring components:
+  (1) semantic alignment between candidate profile tokens and job requirements,
+  (2) experience-years alignment against stated seniority range,
+  (3) career progression depth and seniority signals,
+  (4) behavioural availability (open-to-work, response rate, interview
+  completion), and (5) trust/completeness signals (verified contact, LinkedIn,
+  profile completeness score). Components are combined with learned weights
+  (0.30 / 0.20 / 0.15 / 0.20 / 0.15). Candidate shortlisting uses a
+  three-strategy hybrid retrieval (lexical 35 % + semantic 45 % + metadata
+  20 %) over the full candidate corpus before ranking. A plausibility filter
+  downweights impossible profiles and explicitly guards against honeypot-type
+  anomalies. Confidence is estimated from profile completeness, consistency,
+  and inter-component agreement. Explanations are templated from the strongest
+  evidence signals and attached per candidate. Runtime is under 5 minutes for
+  100 000 candidates on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
