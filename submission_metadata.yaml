@@ -14,7 +14,7 @@ team_members:
 
 github_repo: "https://github.com/atfaizzz/redrob-candidate-ranker"
 
-sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+sandbox_link: "https://redrob-candidate-ai-recruitment-pipeline.streamlit.app"
 
 reproduce_command: "python rank.py --candidates ./India_runs_data_and_ai_challenge/candidates.jsonl --out ./outputs/submission.csv"
 
